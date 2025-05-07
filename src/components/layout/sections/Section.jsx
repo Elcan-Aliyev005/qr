@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
 import MenuSlider from '../../ui/sliders/menu-slider'
 import { Link, useParams } from 'react-router-dom'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 function Section({ name, slug, menu }) {
-    const params = useParams()
+    // const params = useParams()
 
-    useEffect(() => { AOS.init() }, [])
-    useEffect(() => { AOS.refresh() }, [params.name])
+    // useEffect(() => { AOS.refresh() }, [params.name])
 
 
     return (

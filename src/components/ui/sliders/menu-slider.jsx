@@ -30,7 +30,7 @@ export default function MenuSlider({ menu }) {
                         return <SwiperSlide>
                             <div className=' rounded-[8px]  overflow-hidden bg-[#201E2C] '>
                                 <div className="slide-top h-[100px]">
-                                    <img className='object-center h-full w-full' src={pomidorImg} alt="pomidor-img" />
+                                    <img className='object-center h-full w-full' src={item.img ?? pomidorImg} alt="pomidor-img" />
                                 </div>
                                 <div className="slide-bottom text-[#fff] text-left p-[10px]">
                                     <h3 className='text-[18px] font-semibold leading-[18px] pb-[6px]' >{item.name}</h3>

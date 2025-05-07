@@ -6,23 +6,30 @@ function SearchBar() {
   const { search, setSearch, handleToggle } = useContext(LayoutContext);
 
   const handleChange = (e) => {
-    setSearch(prev => ({
-      ...prev,
-      value: e.target.value
-    }));
+    const value = e.target.value
+    if (value.length <= 18) {
+      setSearch(prev => ({
+        ...prev,
+        value: e.target.value
+      }));
+    }
+    else{
+      return
+    }
   };
 
+
   return (
-    <div className={`flex ps-[12px] rounded-[6px] items-center transition-all duration-300
-      ${search.isActive ? 'bg-[#201E2C] text-[#fff] w-[full]' : 'w-[54px]'}
+    <div className={`flex  rounded-[6px] items-center transition-all duration-300
+      ${search.isActive ? 'bg-[#201E2C] text-[#fff] w-[240px]' : 'w-[54px]'}
     `}>
-      <div className={`w-full transition-all duration-300 ${search.isActive ? 'opacity-100' : 'opacity-0 w-[0px]'} overflow-hidden`}>
+      <div className={`w-full transition-all  duration-300 ${search.isActive ? 'opacity-100' : 'opacity-0 w-[0px]'} overflow-hidden`}>
         <input
           type="text"
           placeholder="Search"
           value={search.value}
           onChange={handleChange}
-          className="text-[#000] outline-0 placeholder:text-[#808080] w-full text-[15px] py-[6px]"
+          className="text-[#fff] outline-0 placeholder:text-[#808080] w-full px-[15px] text-[15px] py-[6px]"
         />
       </div>
 
