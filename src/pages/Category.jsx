@@ -5,7 +5,7 @@ import { Link, useParams } from 'react-router-dom'
 import CategoryItem from '../components/layout/category/item'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
-import { menu, categories } from "../../../data"
+import { menu, categories } from "../../../data.js"
 import { LayoutContext } from '../context/LayoutContext';
 
 

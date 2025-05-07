@@ -5,7 +5,7 @@ import { getAllMenu } from '../service/getAllMenu'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
-import {menu, categories} from "../../../data"
+import {menu, categories} from "../../../data.js"
 function Home() {
 
 

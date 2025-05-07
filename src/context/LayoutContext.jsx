@@ -1,6 +1,6 @@
 import { createContext, useCallback, useState } from "react";
 export const LayoutContext = createContext()
-import {menu, categories} from "../../../data"
+import {menu, categories} from "../../../data.js"
 
 function LayoutProvider({ children }) {
 

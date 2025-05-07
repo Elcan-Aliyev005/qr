@@ -5,7 +5,7 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import { getAllCategories } from '../../../service/getAllCategory';
 import { NavLink, useLocation } from 'react-router-dom';
-import { menu, categories } from "../../../../../data"
+import { menu, categories } from "../../../../../data.js"
 
 export default function CategorySlider() {
     const [categoriesData, setCategories] = useState(null);
