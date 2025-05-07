@@ -1,11 +1,10 @@
 import React, { useContext, useEffect } from 'react'
-import Header from '../components/layout/header'
 import { Link, Outlet } from 'react-router-dom'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'
 import { LayoutContext } from '../context/LayoutContext';
 import CategoryItem from '../components/layout/category/item';
-
+import Header from '../components/layout/Header';
 function MainLayout() {
     const { search, data } = useContext(LayoutContext)
     const { menu } = data

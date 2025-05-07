@@ -1,7 +1,6 @@
 import React from 'react'
 import Filter from '../functional/filter'
 import { Link } from 'react-router-dom'
-import { Search } from 'lucide-react'
 import SearchBar from '../functional/input'
 
 function Header() {
