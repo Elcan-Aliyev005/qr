@@ -12,4 +12,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+   build: {
+    outDir: 'dist', // Make sure Vercel uses the correct output folder
+    rollupOptions: {
+      input: 'index.html',
+    },
+  }
 })
+
+
