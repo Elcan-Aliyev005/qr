@@ -15,7 +15,7 @@ function CategoryItem({ price, name, index,img }) {
       </div>
       <div>
         <h3 className='text-[20px] font-semibold'>{name}</h3>
-        <h3>Qiymət: {price}</h3>
+        <h3>Qiymət: {price} ₼ </h3>
       </div>
     </div>
   )
