@@ -10,7 +10,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100vw;
-  overflow: hidden;
+  /* overflow: hidden; */
   color: #fff;
 
   #root {
